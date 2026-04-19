@@ -7,6 +7,11 @@ public class Q10 {
         System.out.println("Enter number");
         int n = sc.nextInt();
         sc.close();
-
+        int prod =1;
+        while (n > 0) {
+            prod = prod * (n%10);
+            n = n/10;
+        }
+        System.out.println(prod);
     }
 }
